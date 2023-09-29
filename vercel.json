@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "server.js",
-            "use": "@now/VK_POS_Server"
+            "use": "@vercel/node"
         }
     ],
     "routes": [
