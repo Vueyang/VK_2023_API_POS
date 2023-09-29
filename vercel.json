@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "server.js",
+            "dest": "@now/VK_POS_Server"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "server.js"
+        }
+    ]
+}
