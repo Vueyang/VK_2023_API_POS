@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "server.js",
-            "dest": "@now/VK_POS_Server"
+            "use": "@now/VK_POS_Server"
         }
     ],
     "routes": [
