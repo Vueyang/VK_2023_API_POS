@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
+
 // 3 ປະສາມ Middleware
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
@@ -8,6 +9,7 @@ const cors = require('cors');
 // import routes ມາໃຊ້ ແບບ auto
 const {readdirSync} = require('fs');
 const connectDB = require('./Config/db');
+
  // import routes ມາໃຊ້
  //const authRoute = require('./Routes/auth');
  //const productionRoute = require('./Routes/product');
@@ -36,4 +38,4 @@ app.use( '/api/v1/product',productionRoute);*/
 
 // ແບບທີ່ 3 route 
 readdirSync('./Routes').map((r)=>app.use('/api/v1/', require('./Routes/' + r)));
-app.listen(5000, () =>console.log('Server is running...'));
+app.listen(8000, () =>console.log('Server is running...'));
