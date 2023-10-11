@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
-
+require('dotenv').config();
 // 3 ປະສາມ Middleware
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
